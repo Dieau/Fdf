@@ -6,13 +6,14 @@
 /*   By: alakhdar <<marvin@42.fr>>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 12:12:01 by alakhdar          #+#    #+#             */
-/*   Updated: 2022/02/21 13:30:55 by alakhdar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/22 14:37:22 by alakhdar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fdf.h"
 #include "../includes/alias.h"
 
+//Retourne le plus grand float entre a et b
 int	max_ab(float a, float b)
 {
 	if (a > b)
@@ -20,6 +21,7 @@ int	max_ab(float a, float b)
 	return (b);
 }
 
+//Vérifie le signe du float
 float	abs_a(float a)
 {
 	if (a < 0)
@@ -27,6 +29,8 @@ float	abs_a(float a)
 	return (a);
 }
 
+//Paramètres de base de l'image pour un point de vue correct au lancement
+//et pouvoir reset la projection
 void	set_default(t_object *data)
 {
 	data->zoom = 25;
@@ -44,6 +48,7 @@ void	set_default(t_object *data)
 	print_menu(data);
 }
 
+//Redirige vers la fonction appropriée en fonction du signal reçu
 int	pressed_key(int key, t_object *data)
 {
 	if (key == KEY_DOWN || key == KEY_UP
@@ -65,15 +70,4 @@ int	pressed_key(int key, t_object *data)
 		exit(0);
 	}
 	return (0);
-}
-
-char	*print_fps(t_object *data)
-{
-	double	delta_time;
-	char	*fps;
-
-	clock_gettime(CLOCK_MONOTONIC_RAW, &(data->curr_time));
-	delta_time = (data->curr_time.tv_nsec - data->prev_time.tv_nsec) / 1000;
-	fps = ft_itoa(1 / (delta_time / 1000000) + 20);
-	return (fps);
 }

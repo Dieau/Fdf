@@ -6,7 +6,7 @@
 /*   By: alakhdar <<marvin@42.fr>>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 09:41:37 by alakhdar          #+#    #+#             */
-/*   Updated: 2022/02/21 11:24:23 by alakhdar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/22 14:09:37 by alakhdar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # include "../libft/libft.h"
 # include "../minilibx/mlx.h"
 # include <stdbool.h>
-# include <time.h>
 
 typedef struct s_position
 {
@@ -80,6 +79,7 @@ float				abs_a(float a);
 int					is_number(char *str);
 int					get_height(char *file);
 int					get_width(char *file);
+int					close_window(t_object *data);
 void				init(t_object *data);
 void				memory_z(t_object *data);
 void				fill_z(int *z_line, char *line);

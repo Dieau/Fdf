@@ -6,12 +6,13 @@
 /*   By: alakhdar <<marvin@42.fr>>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 09:32:57 by alakhdar          #+#    #+#             */
-/*   Updated: 2022/02/17 15:11:41 by alakhdar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/22 14:21:42 by alakhdar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fdf.h"
 
+//Parse la map en largeur pour retourner la width
 int	get_count_words(char *line, char ch)
 {
 	int	count_words;
@@ -50,10 +51,6 @@ void	print_menu(t_object *data)
 		220, 0xEAEAEA, "Isometric view: I");
 	mlx_string_put(data->mlx, data->win, 65,
 		240, 0xEAEAEA, "Parallel view: P");
-	mlx_string_put(data->mlx, data->win, 1800,
-		20, 0xEF8633, "FPS :");
-	mlx_string_put(data->mlx, data->win, 1800,
-		60, 0xEAEAEA, print_fps(data));
 }
 
 void	my_mlx_pixel_put(t_data *data, int x, int y, int color)
@@ -68,6 +65,9 @@ void	my_mlx_pixel_put(t_data *data, int x, int y, int color)
 	}
 }
 
+// Initialise les données de l'objet
+// Set les offsets et l'angle par défault
+// Print le menu et le point de vue initial
 void	init(t_object *data)
 {
 	data->mlx = mlx_init();
@@ -86,6 +86,8 @@ void	init(t_object *data)
 	print_menu(data);
 }
 
+//Un hook pour les keycodes
+//Un hook pour le destroy
 int	main(int argc, char **argv)
 {
 	t_object	*data;
@@ -97,7 +99,7 @@ int	main(int argc, char **argv)
 		error_exit("MALLOC ERROR\n", 1);
 	read_from_file(argv[1], data);
 	init(data);
-	clock_gettime(CLOCK_MONOTONIC_RAW, &(data->prev_time));
+	mlx_hook(data->win, 17, !1L << 0, close_window, data);
 	mlx_hook(data->win, 2, 0, pressed_key, data);
 	mlx_loop(data->mlx);
 	return (0);

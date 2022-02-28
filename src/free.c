@@ -6,7 +6,7 @@
 /*   By: alakhdar <<marvin@42.fr>>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 10:50:30 by alakhdar          #+#    #+#             */
-/*   Updated: 2022/02/15 11:39:21 by alakhdar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/22 14:28:58 by alakhdar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,4 +47,15 @@ void	freetab(char **argv)
 	}
 	free(argv);
 	argv = NULL;
+}
+
+//Lorsque l'event destroy est reçu
+//Destroy la fenêtre, free le nécéssaire et quitte le programme
+int	close_window(t_object *data)
+{
+	(void)data;
+	mlx_destroy_window(data->mlx, data->win);
+	free_memory(data);
+	exit(0);
+	return (0);
 }

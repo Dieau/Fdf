@@ -6,13 +6,15 @@
 /*   By: alakhdar <<marvin@42.fr>>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 11:43:39 by alakhdar          #+#    #+#             */
-/*   Updated: 2022/02/17 14:08:46 by alakhdar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/22 14:54:14 by alakhdar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fdf.h"
 #include "../includes/alias.h"
 
+//Incrémente ou décrémente le offset x et y
+//Recrée une image actualisée
 void	move_map(t_object *data, int key)
 {
 	if (key == KEY_DOWN)
@@ -32,6 +34,8 @@ void	move_map(t_object *data, int key)
 	print_menu(data);
 }
 
+//Incrémente ou décrémente le offset zoom
+//Recrée une image actualisée
 void	zoom_map(t_object *data, int key)
 {
 	if (key == KEY_PLUS)
@@ -47,6 +51,7 @@ void	zoom_map(t_object *data, int key)
 	print_menu(data);
 }
 
+//Touche au booléen iso pour activer ou désactiver la vue isométrique
 void	set_iso_parallel(t_object *data, int key)
 {
 	if (key == ISO)
@@ -62,6 +67,7 @@ void	set_iso_parallel(t_object *data, int key)
 	print_menu(data);
 }
 
+//Touche à l'angle alpha sur pression de touche
 void	rotate_map(t_object *data, int key)
 {
 	data->is_iso = true;
@@ -78,6 +84,7 @@ void	rotate_map(t_object *data, int key)
 	print_menu(data);
 }
 
+//Offset z_zoom 
 void	zoom_z(t_object *data, int key)
 {
 	if (key == KEY_PLUS_Z)

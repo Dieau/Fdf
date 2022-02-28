@@ -6,7 +6,7 @@
 /*   By: alakhdar <<marvin@42.fr>>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 10:29:53 by alakhdar          #+#    #+#             */
-/*   Updated: 2022/02/14 10:17:22 by alakhdar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/22 14:25:55 by alakhdar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include "../includes/get_next_line.h"
 #include <fcntl.h>
 
+//Parse la map en hauteur pour reoturner la height
 int	get_height(char *file)
 {
 	int		fd;
@@ -52,6 +53,7 @@ int	get_width(char *file)
 	return (width);
 }
 
+//Alloue la place pour tous les points parsés dans un double tab d'int
 void	memory_z(t_object *data)
 {
 	int	i;
@@ -70,6 +72,7 @@ void	memory_z(t_object *data)
 	}
 }
 
+//Remplit le double tableau d'int avec les valeurs de la map
 void	fill_z(int *z_line, char *line)
 {
 	char	**nums;
@@ -90,6 +93,9 @@ void	fill_z(int *z_line, char *line)
 	nums = NULL;
 }
 
+//Déniche la taille (width, height)
+//Alloue l'espace nécéssaire
+//Remplit un tableau avec les valeurs de la map dans la struct
 void	read_from_file(char *file, t_object *data)
 {
 	int		fd;

@@ -6,7 +6,7 @@
 /*   By: alakhdar <<marvin@42.fr>>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 10:13:25 by alakhdar          #+#    #+#             */
-/*   Updated: 2022/02/15 11:39:17 by alakhdar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/22 14:48:49 by alakhdar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,9 @@ int	is_number(char *str)
 	return (1);
 }
 
+//Check si la map est valide pour notre programme
+//Split les nums parsés et effectue le check
+//Free et exit sur une erreur
 void	check_map(char **nums)
 {
 	char	**tmp;
