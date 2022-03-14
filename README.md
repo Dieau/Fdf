@@ -1,9 +1,12 @@
 # Fdf - Wireframe model
 
 The representation in 3D of a landscape is a critical aspect of modern mapping.
+
 For example, in these times of spatial exploration, to have a 3D representation of Mars is a prerequisite condition to its conquest.
+
 As another example, comparing various 3D representations of an area of high tectonic activity will allow you to better understand these phenomena and their evolution, and as a result, be better prepared.
-It’s your turn today to modelize some 3D magnificent landscapes, imaginary or not.
+
+It was my turn to modelize some 3D magnificent landscapes, imaginary or not.
 
 ![Screenshot](/img/intro.png)
 
@@ -11,7 +14,7 @@ It’s your turn today to modelize some 3D magnificent landscapes, imaginary or 
 
 This project is about creating a simple wireframe model representation of a 3D land- scape by linking various points (x, y, z) thanks to line segments (edges).
 
-Your project must comply with the following rules:
+The project must comply with the following rules:
 • You must use the MiniLibX. Either the version available on the school machines, or installing it using its sources.
 
 • You have to turn in a Makefile which will compile your source files. It must not relink.
@@ -20,7 +23,7 @@ Your project must comply with the following rules:
 
 Rendering :
 
-Your program has to represent the model in isometric projection.
+The program has to represent the model in isometric projection.
 The coordinates of the landscape are stored in a .fdf file passed as a parameter to your program.
 
 Each number represents a point in space:
@@ -35,7 +38,7 @@ Each number represents a point in space:
 
 Graphic management :
 
-• Your program has to display the image in a window.
+• The program has to display the image in a window.
 
 • The management of your window must remain smooth (changing to another window, minimizing, and so forth).
 
@@ -47,9 +50,9 @@ Graphic management :
 
 # Bonus part
 
-Usually, you would be encouraged to develop your own original extra features. However, there will be much more interesting graphic projects later. They are waiting for you!! Don’t lose too much time on this assignment!
+"Usually, you would be encouraged to develop your own original extra features. However, there will be much more interesting graphic projects later. They are waiting for you!! Don’t lose too much time on this assignment!"
 
-You are allowed to use other functions to complete the bonus part as long as their use is justified during your evaluation. Be smart!
+"You are allowed to use other functions to complete the bonus part as long as their use is justified during your evaluation. Be smart!"
 
 You will get some extra points if you can:
 • Include one extra projection (such as parallel or conic)! 
