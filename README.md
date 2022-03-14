@@ -4,6 +4,8 @@ The representation in 3D of a landscape is a critical aspect of modern mapping. 
 As another example, comparing various 3D representations of an area of high tectonic activity will allow you to better understand these phenomena and their evolution, and as a result, be better prepared.
 It’s your turn today to modelize some 3D magnificent landscapes, imaginary or not.
 
+![Screenshot](Fdf.png)
+
 # Mandatory part
 
 This project is about creating a simple wireframe model representation of a 3D land- scape by linking various points (x, y, z) thanks to line segments (edges).
@@ -61,6 +63,10 @@ You will get some extra points if you can:
 
 ![Screenshot](/img/bonus.png)
 
-For my project, i chose to implement a Commands Menu, helping the user to navigate and making the project more intuitive to use. 
+For my project, i chose to implement a Commands Menu, helping the user to navigate and making the project more intuitive to use.
+
 Then, i included some more key handlings for different types of zooms, translation, and rotation, trying to bring some life into my projection.
+
 I had a lot of fun doing this project, discovering graphics and the use of libs, and i can't wait to dive deeper into it!
+
+# Final Result : 125/100
