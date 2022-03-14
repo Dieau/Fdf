@@ -15,6 +15,7 @@ It was my turn to modelize some 3D magnificent landscapes, imaginary or not.
 This project is about creating a simple wireframe model representation of a 3D land- scape by linking various points (x, y, z) thanks to line segments (edges).
 
 The project must comply with the following rules:
+
 • You must use the MiniLibX. Either the version available on the school machines, or installing it using its sources.
 
 • You have to turn in a Makefile which will compile your source files. It must not relink.
