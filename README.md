@@ -16,6 +16,7 @@ Your project must comply with the following rules:
 • Global variables are forbidden.
 
 Rendering :
+
 Your program has to represent the model in isometric projection.
 The coordinates of the landscape are stored in a .fdf file passed as a parameter to your program.
 
@@ -60,4 +61,6 @@ You will get some extra points if you can:
 
 ![Screenshot](/img/bonus.png)
 
-What i chose : 
+For my project, i chose to implement a Commands Menu, helping the user to navigate and making the project more intuitive to use. 
+Then, i included some more key handlings for different types of zooms, translation, and rotation, trying to bring some life into my projection.
+I had a lot of fun doing this project, discovering graphics and the use of libs, and i can't wait to dive deeper into it!
