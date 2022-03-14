@@ -26,6 +26,7 @@ Each number represents a point in space:
 ![Screenshot](/img/manda.png)
 
 Graphic management :
+
 • Your program has to display the image in a window.
 
 • The management of your window must remain smooth (changing to another window, minimizing, and so forth).
