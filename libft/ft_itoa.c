@@ -6,13 +6,13 @@
 /*   By: alakhdar <<marvin@42.fr>>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 09:35:57 by alakhdar          #+#    #+#             */
-/*   Updated: 2022/02/11 15:06:50 by alakhdar         ###   ########lyon.fr   */
+/*   Updated: 2022/03/09 10:39:54 by alakhdar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
- int	ft_nblen(unsigned int n)
+int	ft_nblen(unsigned int n)
 {
 	unsigned int	i;
 
@@ -25,7 +25,7 @@
 	return (i + 1);
 }
 
- char	*ft_allocm(unsigned int len, int n)
+char	*ft_allocm(unsigned int len, int n)
 {
 	char	*dest;
 
@@ -36,7 +36,7 @@
 	return (dest);
 }
 
- unsigned int	ft_checksign(int n)
+unsigned int	ft_checksign(int n)
 {
 	unsigned int	nb;
 
@@ -47,7 +47,7 @@
 	return (nb);
 }
 
- char	*ft_finalizer(char *src, unsigned int index,
+char	*ft_finalizer(char *src, unsigned int index,
 				unsigned int len, unsigned int nb)
 {
 	src[index] = nb % 10 + 48;

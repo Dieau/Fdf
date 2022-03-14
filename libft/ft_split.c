@@ -6,13 +6,13 @@
 /*   By: alakhdar <<marvin@42.fr>>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 17:58:00 by alakhdar          #+#    #+#             */
-/*   Updated: 2022/02/11 15:06:50 by alakhdar         ###   ########lyon.fr   */
+/*   Updated: 2022/03/09 10:40:13 by alakhdar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
- size_t	split_len(char *src, char c)
+size_t	split_len(char *src, char c)
 {
 	size_t	i;
 
@@ -24,7 +24,7 @@
 	return (i);
 }
 
- size_t	ft_getsize(char *src, char c)
+size_t	ft_getsize(char *src, char c)
 {
 	size_t	i;
 	size_t	j;

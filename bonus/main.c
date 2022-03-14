@@ -6,7 +6,7 @@
 /*   By: alakhdar <<marvin@42.fr>>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 09:32:57 by alakhdar          #+#    #+#             */
-/*   Updated: 2022/03/09 11:53:23 by alakhdar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/22 14:21:42 by alakhdar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,28 @@ int	get_count_words(char *line, char ch)
 	return (count_words);
 }
 
+void	print_menu(t_object *data)
+{
+	mlx_string_put(data->mlx, data->win,
+		65, 20, 0xEF8633, "COMMANDS");
+	mlx_string_put(data->mlx, data->win,
+		65, 60, 0xEAEAEA, "Zoom: + / -");
+	mlx_string_put(data->mlx, data->win, 65,
+		80, 0xEAEAEA, "Zoom Z: z / x");
+	mlx_string_put(data->mlx, data->win, 65,
+		100, 0xEAEAEA, "Rotate: < / >");
+	mlx_string_put(data->mlx, data->win, 65,
+		120, 0xEAEAEA, "Move: Arrows");
+	mlx_string_put(data->mlx, data->win, 65,
+		140, 0xEAEAEA, "Set to default: R");
+	mlx_string_put(data->mlx, data->win, 65,
+		180, 0xEF8633, "Projection");
+	mlx_string_put(data->mlx, data->win, 65,
+		220, 0xEAEAEA, "Isometric view: I");
+	mlx_string_put(data->mlx, data->win, 65,
+		240, 0xEAEAEA, "Parallel view: P");
+}
+
 void	my_mlx_pixel_put(t_data *data, int x, int y, int color)
 {
 	char	*dst;
@@ -45,7 +67,7 @@ void	my_mlx_pixel_put(t_data *data, int x, int y, int color)
 
 // Initialise les données de l'objet
 // Set les offsets et l'angle par défault
-// Print le point de vue initial
+// Print le menu et le point de vue initial
 void	init(t_object *data)
 {
 	data->mlx = mlx_init();
@@ -61,6 +83,7 @@ void	init(t_object *data)
 	data->alpha = 0.523599;
 	data->is_iso = true;
 	drawmap(data);
+	print_menu(data);
 }
 
 //Un hook pour les keycodes

@@ -6,7 +6,7 @@
 /*   By: alakhdar <<marvin@42.fr>>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 14:15:31 by alakhdar          #+#    #+#             */
-/*   Updated: 2022/03/07 13:49:11 by alakhdar         ###   ########lyon.fr   */
+/*   Updated: 2022/02/22 14:44:05 by alakhdar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	set_params(t_position *bline, t_object *data)
 	z = data->z_axis[(int)bline->y][(int)bline->x] * data->z_zoom;
 	z1 = data->z_axis[(int)bline->y1][(int)bline->x1] * data->z_zoom;
 	if (z > 0 || z1 > 0)
-		data->color = 0xFF0000 + (z * 20);
+		data->color = 0xFF0000 + (z * 0.9);
 	else if (z < 0 || z1 < 0)
 		data->color = 0x610000;
 	else

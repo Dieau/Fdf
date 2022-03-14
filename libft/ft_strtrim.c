@@ -6,13 +6,13 @@
 /*   By: alakhdar <<marvin@42.fr>>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 14:40:28 by alakhdar          #+#    #+#             */
-/*   Updated: 2022/02/11 15:06:50 by alakhdar         ###   ########lyon.fr   */
+/*   Updated: 2022/03/09 10:40:32 by alakhdar         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
- unsigned int	is_in_set(char c, char const *set)
+unsigned int	is_in_set(char c, char const *set)
 {
 	while (*set)
 	{
@@ -23,7 +23,7 @@
 	return (0);
 }
 
- char	*ft_finish_trim(char *trim, char
+char	*ft_finish_trim(char *trim, char
 	*trim_start, unsigned int trim_size)
 {
 	ft_strlcpy(trim, trim_start, trim_size);
