@@ -29,3 +29,20 @@ dow, minimizing, and so forth).
 • Pressing ESC must close the window and quit the program in a clean way.
 • Clicking on the cross on the window’s frame must close the window and quit the program in a clean way.
 • The use of the images of the MiniLibX is mandatory.
+
+# Bonus part
+
+Usually, you would be encouraged to develop your own original extra features. However, there will be much more interesting graphic projects later. They are waiting for you!! Don’t lose too much time on this assignment!
+
+You are allowed to use other functions to complete the bonus part as long as their use is justified during your evaluation. Be smart!
+
+You will get some extra points if you can:
+• Include one extra projection (such as parallel or conic)! 
+• Zoom in and out.
+• Translate your model.
+• Rotate your model.
+• Add one more bonus of your choice.
+
+![Screenshot](/img/bonus.png)
+
+What i chose : 
