@@ -20,8 +20,12 @@ Your program has to represent the model in isometric projection.
 The coordinates of the landscape are stored in a .fdf file passed as a parameter to your program.
 
 Each number represents a point in space:
+
 • The horizontal position corresponds to its axis. 
-• The vertical position corresponds to its ordinate. • The value corresponds to its altitude.
+
+• The vertical position corresponds to its ordinate. 
+
+• The value corresponds to its altitude.
 
 ![Screenshot](/img/manda.png)
 
