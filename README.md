@@ -4,7 +4,7 @@ The representation in 3D of a landscape is a critical aspect of modern mapping. 
 As another example, comparing various 3D representations of an area of high tectonic activity will allow you to better understand these phenomena and their evolution, and as a result, be better prepared.
 It’s your turn today to modelize some 3D magnificent landscapes, imaginary or not.
 
-![Screenshot](file.jpg)
+![Screenshot](file.png)
 
 # Mandatory part
 
